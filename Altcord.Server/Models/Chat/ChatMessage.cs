@@ -1,4 +1,4 @@
-namespace Altcord.Server.Models.Messages;
+namespace Altcord.Server.Models.Chat;
 
 public class ChatMessage
 {

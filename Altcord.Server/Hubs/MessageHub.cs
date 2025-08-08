@@ -1,5 +1,5 @@
 using Altcord.Server.Models;
-using Altcord.Server.Models.Messages;
+using Altcord.Server.Models.Chat;
 using Microsoft.AspNetCore.SignalR;
 
 namespace Altcord.Server.Hubs;

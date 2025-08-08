@@ -32,7 +32,7 @@ public class Startup
             {
                 e.MapHub<MessageHub>("/hub");
                 e.MapHub<VoiceHub>("/voice");
-                e.MapHub<VoiceUsersHub>("/voiceUsers");
+                e.MapHub<StateHub>("/hub/state");
                 e.MapControllers();
             });
 }
