@@ -42,7 +42,6 @@ public class Startup
             .UseRouting()
             .UseEndpoints(e =>
             {
-                e.MapHub<MessageHub>("/hub");
                 e.MapHub<VoiceHub>("/voice");
                 e.MapHub<StateHub>("/hub/state");
                 e.MapControllers();
