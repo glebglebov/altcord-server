@@ -1,5 +1,7 @@
+using System.Reflection;
+using Altcord.Server.Core.Repositories;
 using Altcord.Server.Hubs;
-using Altcord.Server.Repositories.VoiceUsers;
+using Altcord.Server.Services;
 
 namespace Altcord.Server;
 
@@ -7,7 +9,11 @@ public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddSingleton<IVoiceUserRepository, VoiceUserRepository>();
+        services
+            .AddRepositories()
+            .AddServices();
+
+        services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetAssembly(typeof(Startup))!));
 
         services.AddCors(o =>
         {
@@ -20,7 +26,13 @@ public class Startup
             });
         });
 
-        services.AddSignalR(o => o.EnableDetailedErrors = true);
+        services.AddSignalR(o =>
+        {
+            o.EnableDetailedErrors = true;
+            o.KeepAliveInterval = TimeSpan.FromSeconds(10);
+            o.ClientTimeoutInterval = TimeSpan.FromSeconds(30);
+        });
+
         services.AddControllers();
     }
 

@@ -1,5 +1,5 @@
-using Altcord.Server.Models;
-using Altcord.Server.Repositories.VoiceUsers;
+using Altcord.Server.Core.Models;
+using Altcord.Server.Core.Repositories.VoiceUsers;
 using Microsoft.AspNetCore.SignalR;
 
 namespace Altcord.Server.Hubs;

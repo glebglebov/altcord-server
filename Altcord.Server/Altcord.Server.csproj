@@ -7,12 +7,18 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="JetBrains.Annotations" Version="2025.2.0" />
       <PackageReference Include="MediatR" Version="12.5.0" />
       <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
+      <PackageReference Include="Scrutor" Version="6.1.0" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Handlers\State\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Altcord.Server.Core\Altcord.Server.Core.csproj" />
     </ItemGroup>
 
 </Project>

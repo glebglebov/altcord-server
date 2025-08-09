@@ -1,8 +1,9 @@
-namespace Altcord.Server.Models.Chat;
+namespace Altcord.Server.Core.Models;
 
 public class ChatMessage
 {
-    public required User User { get; init; }
+    public Guid Id { get; init; }
+    public Guid UserId { get; init; }
     public required string Text { get; init; }
     public required string Timestamp { get; init; }
 }

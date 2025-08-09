@@ -1,4 +1,4 @@
-using Altcord.Server.Models.State;
+using Altcord.Server.Models;
 using MediatR;
 
 namespace Altcord.Server.Handlers.State.Get;

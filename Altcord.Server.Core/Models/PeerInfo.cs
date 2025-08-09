@@ -1,4 +1,4 @@
-namespace Altcord.Server.Models;
+namespace Altcord.Server.Core.Models;
 
 public class PeerInfo
 {

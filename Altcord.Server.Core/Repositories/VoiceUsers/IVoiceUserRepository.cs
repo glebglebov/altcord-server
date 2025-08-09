@@ -1,6 +1,6 @@
-using Altcord.Server.Models;
+using Altcord.Server.Core.Models;
 
-namespace Altcord.Server.Repositories.VoiceUsers;
+namespace Altcord.Server.Core.Repositories.VoiceUsers;
 
 public interface IVoiceUserRepository
 {

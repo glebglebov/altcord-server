@@ -1,4 +1,4 @@
-namespace Altcord.Server.Repositories.Messages;
+namespace Altcord.Server.Core.Repositories.Messages;
 
 public interface IMessageRepository
 {

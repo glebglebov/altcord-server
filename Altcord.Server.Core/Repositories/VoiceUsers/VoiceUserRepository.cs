@@ -1,7 +1,7 @@
 using System.Collections.Concurrent;
-using Altcord.Server.Models;
+using Altcord.Server.Core.Models;
 
-namespace Altcord.Server.Repositories.VoiceUsers;
+namespace Altcord.Server.Core.Repositories.VoiceUsers;
 
 public class VoiceUserRepository : IVoiceUserRepository
 {
