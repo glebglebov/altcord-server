@@ -19,7 +19,7 @@ public class CreateUserHandler(IUserRepository repository, IStateNotificator not
         };
 
         await repository.Create(user, cancellationToken);
-        await notificator.SendUserUpdated(user.Id, cancellationToken);
+        await notificator.SendNewUserJoined(user.Id, cancellationToken);
 
         return new CreateUserResult
         {

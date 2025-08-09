@@ -10,5 +10,4 @@ public class User
     public required string UserName { get; init; }
     public required string AvatarUrl { get; init; }
     public required string Color { get; init; }
-    public bool IsOnline { get; init; }
 }
